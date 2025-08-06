@@ -1,0 +1,121 @@
+/* Conteneur principal de la liste d’options */
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-card {
+    background-color: #ecf9f1;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #d7f0e1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.option-header strong {
+    font-size: 1.1em;
+}
+
+/* Champ (label + input) */
+.option-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0;
+}
+
+.option-field label {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.option-field input,
+.option-field select {
+    flex: 2;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Boutons d’action */
+.edit-button,
+.add-button {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.edit-button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* État édition : jaune clair */
+.edit-button.edit-mode {
+    background-color: #aaa;
+    color: #333;
+}
+
+/* État verrouillé : gris clair */
+.edit-button.locked-mode {
+    background-color: #f0ad4e;
+    color: #333;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.add-button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.add-button:hover:not(:disabled) {
+    background-color: #b3ebbd;
+}
+
+.delete-button {
+    background-color: #c4e3d1;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #a5d3bb;
+}
+
+/* Popup de sauvegarde */
+.save-popup {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-top: 8px;
+}

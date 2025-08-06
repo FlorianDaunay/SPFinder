@@ -1,0 +1,27 @@
+/* src/css/Home.css */
+
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    flex: 1;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    background-color: #f2f4f8;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.main-content {
+    padding: 1.5rem;
+    overflow-y: auto;
+}

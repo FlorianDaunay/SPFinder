@@ -1,0 +1,26 @@
+{
+    "name": "sp-finder",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "parcel public/index.html",
+        "build": "parcel build public/index.html --dist-dir dist --public-url /SP-Finder/",
+        "deploy": "npm run build && npx gh-pages -d dist"
+    },
+    "dependencies": {
+        "firebase": "^10.0.0",
+        "lodash.debounce": "^4.0.8",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.18.0",
+        "recharts": "^2.8.0"
+    },
+    "devDependencies": {
+        "@types/lodash.debounce": "^4.0.9",
+        "@types/react": "^18.2.21",
+        "@types/react-dom": "^18.2.7",
+        "buffer": "^6.0.3",
+        "parcel": "^2.9.3",
+        "typescript": "^5.4.0"
+    },
+    "homepage": "https://floriandaunay.github.io/SP-Finder"
+}

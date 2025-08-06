@@ -1,0 +1,26 @@
+.chart-panel {
+    margin-top: 20px;
+}
+
+.chart-placeholder {
+    background: #ddd;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeks {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.greek-chart {
+    background: #ddd;
+    flex: 1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,198 @@
+/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+/* Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.app-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logout-btn {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Main layout */
+.main-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    border-right: 1px solid #e1e4e8;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.sidebar input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sidebar button {
+    padding: 8px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sidebar button:hover {
+    background-color: #2980b9;
+}
+
+.sidebar .sp-button {
+    padding: 6px 10px;
+    text-align: left;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sidebar .sp-button:hover {
+    background-color: #dcdde1;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-content input[type="text"] {
+    padding: 6px 10px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.chart-panel {
+    background-color: #ecf0f1;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.greeks-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.greeks-charts {
+    display: flex;
+    gap: 16px;
+}
+
+.greeks-charts .greek {
+    flex: 1;
+    height: 120px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Option panel */
+.option-editor {
+    width: 260px;
+    background-color: #ffffff;
+    border-left: 1px solid #e1e4e8;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+}
+
+.option-editor button {
+    padding: 8px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.option-editor button:hover {
+    background-color: #27ae60;
+}
+
+.option-card {
+    background-color: #ecf9f1;
+    border: 1px solid #d4efdf;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.option-card input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}

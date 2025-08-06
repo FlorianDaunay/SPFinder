@@ -1,0 +1,47 @@
+.product-editor-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.product-main {
+    flex: 2;
+}
+
+.product-options-panel {
+    flex: 1;
+    max-width: 400px;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: fit-content;
+}
+
+.sliders {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.graph-section {
+    margin-bottom: 2rem;
+}
+
+.greek-selectors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.editable-product-name {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
