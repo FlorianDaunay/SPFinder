@@ -1,0 +1,12 @@
+.env.local
+
+node_modules/
+node_modules/*
+
+.parcel-cache/
+.parcel-cache/*
+
+dist/
+dist/*
+
+package-lock.json
