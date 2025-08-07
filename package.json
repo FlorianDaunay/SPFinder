@@ -1,9 +1,9 @@
 {
     "name": "sp-finder",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scripts": {
         "start": "parcel public/index.html",
-        "build": "parcel build public/index.html --dist-dir dist --public-url /SP-Finder/",
+        "build": "parcel build public/index.html --dist-dir dist --public-url /SPFinder/",
         "deploy": "npm run build && npx gh-pages -d dist"
     },
     "dependencies": {
@@ -22,5 +22,5 @@
         "parcel": "^2.9.3",
         "typescript": "^5.4.0"
     },
-    "homepage": "https://floriandaunay.github.io/SP-Finder"
+    "homepage": "https://floriandaunay.github.io/SPFinder"
 }

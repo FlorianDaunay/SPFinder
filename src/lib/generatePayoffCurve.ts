@@ -36,11 +36,22 @@ export function generatePayoffCurve(options: OptionData[]): { x: number; y: numb
                 continue;
             }
 
-            // On détecte le nombre d'arguments attendus par la fonction
-            const fn =
-                fnFactory.length === 2
-                    ? fnFactory(strike, c || p)
-                    : fnFactory(strike, knockIn || knockOut, coupon || c || p);
+            let fn;
+
+            if (name.endsWith('Digit')) {
+                // Digital options
+                const fee = name.includes('Call') ? c : p;
+                fn = fnFactory(strike, coupon, fee);
+            } else if (name.includes('In') || name.includes('Out')) {
+                // Barrier options
+                const barrier = knockIn || knockOut;
+                const fee = c || p || coupon;
+                fn = fnFactory(strike, barrier, fee);
+            } else {
+                // Vanilla options
+                const fee = name.includes('Call') ? c : p;
+                fn = fnFactory(strike, fee);
+            }
 
             totalPayoff += leverage * fn(x);
         }
