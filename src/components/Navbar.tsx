@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
     const handleLogout = async () => {
         await signOut(auth);
-        window.location.href = '/#/login'; // redirige vers login
+        window.location.href = 'SPFinder/#/login'; // redirige vers login
     };
 
     return (
